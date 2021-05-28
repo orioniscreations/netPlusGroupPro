@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/layers.css">
+  <link rel="stylesheet" href="/css/cards.css">
+
+  <title>OSI Model</title>
+</head>
+
+<body>
+
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/pages/index.html">OSI Model</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/pages/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/layers.html">Layers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/EnDeCap.html">Encapsulation / Decapsulation</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        A Network+ Project by: Aaron - TJ - Jamen
+      </span>
+    </div>
+  </nav>
+  <!--NAVBAR-->
+
+  <!-- CTA -->
+
+  <div class="layTit">
+    <h1>The OSI Layers</h1>
+  </div>
+
+  <!--  -->
+
+  <!-- MAIN -->
+
+
+  <div class="cardCont">
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/layers/7.jpg)" style="background-size: 100%;"></div>
+
+      </div>
+      <div class="description">
+        <h1>Application</h1>
+        <h2>Layer 7</h2>
+        <p>This is the layer of the osi model that we as users actually communicate/ interact with. The application
+          layer acts as a sort of middle man helping applications such as edge or chrome interact with the other layers
+          of the osi. On top of this task the application layer also has to establish and identify the availability of
+          the other devices that you are trying to communicate with and to determine if there are enough resources for
+          the communication request to exist </p>
+
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/layers/6.jpg)" style="background-size: 100%;">
+        </div>
+
+      </div>
+      <div class=" description">
+        <h1>Presentation</h1>
+        <h2>Layer 6</h2>
+
+        <p>the presentation layer does exactly what it is named for it presents the data to the application layer. On
+          top of this the presentation layer is responsible for other things such as data translation, code formatting,
+          data compression/decompression, and data encryption/decryption. To successfully transfer data to another
+          device first the data will be translated to a generic version then when the info is received it will be
+          translated out of the generic version into however that device reads the data </p>
+
+      </div>
+    </div>
+
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/layers/5.jpg)" style="background-size: 100%;"></div>
+
+      </div>
+      <div class="description">
+        <h1>Session</h1>
+        <h2>Layer 5</h2>
+        <p>This is the layer od the osi model that is responsible for creating, maintaining and tearing down sessions
+          between the presentation layer entities. This layer is what keeps applications data separate and keeps them
+          from messing each other up. example being this layer allows you to have multiple web browsers going without
+          them clashing with each other </p>
+
+      </div>
+    </div>
+
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/layers/4.jpg)" style="background-size: 100%;">
+        </div>
+
+      </div>
+      <div class=" description">
+        <h1>Transport</h1>
+        <h2>Layer 4</h2>
+
+        <p>This layer is responsible for segmenting and reassembling data into get this a data stream. This layer has a
+          big hand in helping the information (data from upper layers unite and work together on the same data stream.
+          The transport layer is also what provides the ability for the upper layers to multiplex (it just means being
+          able to run more then one application at once), establish virtual connections, and breaking down virtual
+          circuits. Also id be remised if I didn’t mention the fact the transport layer can either connectionless or
+          connection oriented </p>
+
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/layers/3.jpg)" style="background-size: 100%;"></div>
+
+      </div>
+      <div class="description">
+        <h1>Network</h1>
+        <h2>Layer 3</h2>
+        <p>This layer’s job is managing logical device addressing, it tracks the locations of each device that is om a
+          network, and determines what the best way to move data. The network layer like you may guess from the name
+          must transport traffic to devices that are not local, a router for your wifi being a good example. First the
+          network looks for the ip address to send the traffic and if it doesn’t have a particular one already set the
+          router will go through its address routing table to look for a destination to send the info. If a destination
+          can not be found though the router drops the traffic. Lastly, I won’t go into much detail but there are two
+          types of packets used on this layer. First are <b>data packs</b> these transport data through the
+          internetwork, and <b>route-update</b> packets these are used to update neighboring routers about all the
+          networks connected </p>
+
+      </div>
+    </div>
+
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/layers/2.jpg)" style="background-size: 100%;">
+        </div>
+
+      </div>
+      <div class=" description">
+        <h1>Data Link</h1>
+        <h2>Layer 2</h2>
+
+        <p>This layer is responsible for the physical transmission of the data, error notifications, topology, and ever
+          important flow control. The data layer ensures that messages are delivered to the proper device on a local
+          area network using a mac (media access control) addresses and translates the network layers messages into bits
+          for the physical layer to transmit. The data link layer formats the message into pieces called data frames and
+          adds a header that contains the data destination. This extra info is bit by bit discarded by the data as it
+          travels and is no longer useful until it finally reaches its location having shed its unneeded data. The data
+          is never actually altered along this journey only extra things will be added and then stripped from it as
+          travels until it arrives the same as when it was sent.</p>
+
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/layers/1.jpg)" style="background-size: 100%;">
+        </div>
+
+      </div>
+      <div class="description">
+        <h1>Physical</h1>
+        <h2>Layer 1</h2>
+        <p>Now this is the final layer of the osi model and it has a (or rather two) very important job(s) to send bits
+          and to receive bits. These bits are just in values of ones and zeros. These bits can be represented
+          differently by different types of media like using audio tones or changes in voltage back and forth. Specific
+          protocols are needed for each type to describe the proper bit patterns needed. The connectors and physical
+          topologies are defined by standards allowing different systems to communicate. Finally the physical layer also
+          defines how the physical topology of a network is laid out </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!---->
+
+
+  <div class="footer">
+    <p>c. 2021, Network+ Group Project. Team 3 - Aaron - TJ - Jamen</p>
+  </div>
+
+  <!---->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

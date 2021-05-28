@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/layers.css">
+  <link rel="stylesheet" href="/css/cards.css">
+
+  <title>OSI Model</title>
+</head>
+
+<body>
+
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/pages/index.html">OSI Model</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/pages/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/layers.html">Layers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/EnDeCap.html">Encapsulation / Decapsulation</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        A Network+ Project by: Aaron - TJ - Jamen
+      </span>
+    </div>
+  </nav>
+  <!--NAVBAR-->
+
+  <!-- CTA -->
+
+  <div class="layTit">
+    <h1>The Encapsulation and De-Encapsulation Process</h1>
+  </div>
+
+  <!--  -->
+
+  <!-- MAIN -->
+
+
+  <div class="cardCont">
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/encapsulation.jpg)" style="background-size: 100%;"></div>
+
+      </div>
+      <div class="description" style="height: 500px; padding: 20px; overflow-y: scroll; overflow-x:hidden;">
+        <h1>Encapsulation</h1>
+        <h2>The process where extra information is added from the sender</h2>
+
+        <p><b>Example:</b> When you order something online, you can think of the assembly line in a warehouse, where
+          multiple people have specific roles in picking, assembling, packaging, preparing, shipping and receiving. </p>
+        <p>This method also applies for any data which needs to be sent from one computer to another, The OSI guidelines
+          are set in place to ensure each computer can communicate with the next, whether it be a mac or a PC.</p>
+        <p><i>Note. data flows 2 ways in the OSI model, DOWN (data encapsulation) and UP (data decapsulation).</i></p>
+
+        <p>The Application layer is where the user interacts with the application, this data is then passed to the
+          Presentation layer and then to the session layer. During this time the 3 layers add extra information to the
+          data that the user input. It is then passed onto the Transport layer. This is where the data is broken into
+          smaller pieces in sequence, and the TCP header is added. We now have what is called a Segment.</p>
+
+        <p>Each sequenced segment is then handed to the Network layer for logical addressing and routing. At this
+          layer the data is called a Packet. This is when the IP header is added and gets sent to the Datalink layer.
+          With the data now including the Network layer header, Transport layer header, and the upper layer info, it
+          is now referred to as a frame. </p>
+
+        <p>The datalink layer is responsible for taking packets from the network layer and placing them on the network
+          medium (digital, cable, etc). The Datalink layer Encapsulates each packet in a frame that contains the
+          hardware address/ MAC address of the source and destination computers and the Logical Link Control
+          information that is used to define which protocol in the network layer the packet should be passed onto when
+          it arrives. The FCS field is used for error checking and is added at the end by the Datalink layer.</p>
+
+        <p>Since a frame is a logical group of 1’s and 0’s the Physical layer encapsulates these digits into a digital
+          signal to be read by devices on the same local network. On a remote network the frame is sent to the router
+          or gateway to be routed to its destination. In order to put this Frame on the network, it has to be put into
+          a digital signal. There are also a few 1’s and 0’s added to the beginning of the frame so the recipient
+          computer can synchronize with the digital signal.</p>
+
+        <p>The Application layer is where the user interacts with the application, this data is then passed to the
+          Presentation layer and then to the session layer. During this time the 3 layers add extra information to the
+          data that the user input. It is then passed onto the Transport layer. This is where the data is broken into
+          smaller pieces in sequence, and the TCP header is added. We now have what is called a Segment.</p>
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/de-encapsulation.jpg)" style="background-size: 100%;">
+        </div>
+
+      </div>
+      <div class=" description" style="height: 500px; padding: 20px; overflow-y: scroll; overflow-x:hidden">
+        <h1>De-Encapsulation</h1>
+        <h2>The Process where extra data is removed by the reciever</h2>
+        <p>De-encapsulation takes place on the receiving computer and is the opposite of the encapsulation process,
+          where the headers and trailers are removed.</p>
+        <p>The physical layer reads encoded signals from the media and converts them into frames, which will be handed
+          to the datalink layer</p>
+        <p>The Datalink layer will do a CRC check on the frame, and confirms that the received frame is correct. when
+          that passes without any errors, this layer will strip off any information and headers which were put on by the
+          senders Datalink layer and will send the rest of the packet to the Network layer above. If the frame is wrong,
+          it will be discarded at this point.</p>
+        <p>The Network layer will check the IP address and if it matches, the IP header is stripped from the packet and
+          the rest of the data, which is now called a Segment, is passed onto the Transport layer above. </p>
+        <p>The Transport layer will process the segment, rebuild the data stream, and acknowledge that each piece is
+          received in the correct order, to the sender’s computer using TCP. Next it removes the segment header and
+          reassembles all segments in the original data stream which is then handed to the upper layer application. </p>
+        <p>Upper layers convert the data steam in a format that the target application can understand.</p>
+        <p>So in closing, we can compare encapsulation to the assembly line in any production, as in each part has a
+          specific role in the building and completion of a frame or package and delivery of such package, we can also
+          compare De-encapsulation to receiving the package, ensuring the proper address via shipping label, opening the
+          boxes and ensuring the material is what was asked for, acknowledgment of receipt and enjoying the product
+          purchased or requested.</p>
+
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/EnDeCap.jpg)"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!---->
+
+
+  <div class="footer">
+    <p>c. 2021, Network+ Group Project. Team 3 - Aaron - TJ - Jamen</p>
+  </div>
+
+  <!---->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

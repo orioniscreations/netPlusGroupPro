@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/cards.css">
+
+  <title>OSI Model</title>
+</head>
+
+<body>
+
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/pages/index.html">OSI Model</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/pages/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/layers.html">Layers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/EnDeCap.html">Encapsulation / Decapsulation</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        A Network+ Project by: Aaron - TJ - Jamen
+      </span>
+    </div>
+  </nav>
+  <!--NAVBAR-->
+
+  <!--CALL TO ACTION-->
+
+  <div class="cta">
+    <div class="caption">
+      <img src="/img/title.png" alt="title" class="titleImg">
+    </div>
+
+
+
+  </div>
+
+  <!---->
+
+  <!-- CARDS -->
+
+  <div class="cardCont">
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/resized.jpg)"></div>
+
+      </div>
+      <div class="description">
+        <h1>What is the OSI Model?</h1>
+        <h2>Open Systems Interconnection Model</h2>
+        <p>The OSI Model (Open Systems Interconnection Model) is a conceptual framework used to describe the functions
+          of
+          a networking system. The OSI model characterizes computing functions into a universal set of rules and
+          requirements in order to support interoperability between different products and software. In the OSI
+          reference
+          model, the communications between a computing system are split into seven different abstraction layers:
+          Physical, Data Link, Network, Transport, Session, Presentation, and Application.
+        </p>
+        <p>
+          Created at a time when network computing was in its infancy, the OSI was published in 1984 by the
+          International
+          Organization for Standardization (ISO). Though it does not always map directly to specific systems, the OSI
+          Model is still used today as a means to describe Network Architecture. <sup><a
+              href="https://www.forcepoint.com/cyber-edu/osi-model#:~:text=The%20OSI%20Model%20(Open%20Systems,between%20different%20products%20and%20software.">(1)</a></sup>
+        </p>
+        <p class="read-more">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Read More
+          </button>
+        </p>
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/osimodel-100743439-large.jpg)"></div>
+
+      </div>
+      <div class="description">
+        <h1>The 7 Layers</h1>
+        <h2>The 7 Layers of the OSI Model</h2>
+        <p>The OSI Model uses a layered approach to transmit data from one computer to another. These 7 Layers are:
+        </p>
+        <p>
+          <ol reversed>
+            <li> Application</li>
+            <li> Presentation</li>
+            <li> Session</li>
+            <li> Transport</li>
+            <li> Network</li>
+            <li> Data Link</li>
+            <li> Physical</li>
+          </ol>
+        </p>
+        <p class="read-more">
+          <a href="/pages/layers.html"><button type="button" class="btn btn-primary">Read More</button></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(/img/EnDeCap.jpg)"></div>
+
+      </div>
+      <div class="description">
+        <h1>Encapsulation and De-Encapsulation</h1>
+        <h2>Data Encapsulation and De-Encapsulation in Networking</h2>
+        <p>
+          <p>When Data is sent from one node to another in a computer network, that data is encapsulated at the sender's
+            side, and then de-encapsulated at the reciever's end.</p>
+          <p> <b>Data Encapsulation</b> is the process which some extra information is added to the data item to add
+            some
+            features to
+            it.
+          </p>
+          <p><b>De-Encapsulation</b> is the reverse process, where the encapsulated information is removed from the
+            recieved
+            data to obtain the original data. <sup><a
+                href="https://afteracademy.com/blog/what-is-data-encapsulation-and-de-encapsulation-in-networking#:~:text=Step%201%3A%20The%20Physical%20layer,%2C%20the%20Data%2DLink%20layer.">(2)</a></sup>
+          </p>
+          <p class="read-more">
+            <a href="/pages/EnDeCap.html"><button type="button" class="btn btn-primary">
+                Read More
+              </button></a>
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+    <p>c. 2021, Network+ Group Project. Team 3 - Aaron - TJ - Jamen</p>
+  </div>
+
+  <!-- OSI MODEL MODAL -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">The OSI Model</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>The OSI Model (Open System Interconnection Reference Model) was created by the International Organization
+            for
+            Standardization (ISO) to help cocmputers communicate with computers made by different Manufacturers. It was
+            meant to help vendors create interoperable network devices and software in the form of protocols or
+            standards.</p>
+
+          <p> It is the primary architectural model for networkds and describes how data and network information are
+            communicated from an application on one computer through the network media to an application on another
+            computer. To do this, the OSI Model breaks things down into layers.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+
+
+  <!-- Optional JavaScript -->
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

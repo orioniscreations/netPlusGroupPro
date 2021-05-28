@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/layers.css">
+
+  <title>OSI Model</title>
+</head>
+
+<body>
+
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/pages/index.html">OSI Model</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/pages/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/layers.html">Layers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/EnDeCap.html">Encapsulation / Decapsulation</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        A Network+ Project by: Aaron - TJ - Jamen
+      </span>
+    </div>
+  </nav>
+  <!--NAVBAR-->
+
+  <!-- CTA -->
+
+  <div class="layTit">
+    <h1>The 7 Layers</h1>
+  </div>
+
+  <!--  -->
+
+  <!-- MAIN -->
+
+
+
+  <div class="layers">
+    <input type="radio" id="application" name="accordion" checked="checked" />
+    <label class="item" for="application">
+      <div class="title">Layer 7 - Application</div>
+      <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aliquid harum velit sed
+        similique exercitationem, quasi in, nulla quos accusamus nemo vel dolores. Est id sint dolore, deserunt
+        dolorum
+        accusantium.</div>
+    </label>
+    <input type="radio" id="presentation" name="accordion" />
+    <label class="item" for="presentation">
+      <div class="title">Layer 6 - Presentation</div>
+      <div class="content">TESTING ONE TWO THREE FOUR</div>
+    </label>
+    <input type="radio" id="session" name="accordion" />
+    <label class="item" for="session">
+      <div class="title">Layer 5 - Session</div>
+      <div class="content">PARAGRAPH FOR LAYERS HAHAHAHAHA</div>
+    </label>
+    <input type="radio" id="transport" name="accordion" />
+    <label class="item" for="transport">
+      <div class="title">Layer 4 - Transport</div>
+      <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aliquid harum velit sed
+        similique exercitationem, quasi in, nulla quos accusamus nemo vel dolores. Est id sint dolore, deserunt
+        dolorum
+        accusantium.</div>
+    </label>
+    <input type="radio" id="network" name="accordion" />
+    <label class="item" for="network">
+      <div class="title">Layer 3 - Network</div>
+      <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aliquid harum velit sed
+        similique exercitationem, quasi in, nulla quos accusamus nemo vel dolores. Est id sint dolore, deserunt
+        dolorum
+        accusantium.</div>
+    </label>
+    <input type="radio" id="data link" name="accordion" />
+    <label class="item" for="data link">
+      <div class="title">Layer 2 - Data Link</div>
+      <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aliquid harum velit sed
+        similique exercitationem, quasi in, nulla quos accusamus nemo vel dolores. Est id sint dolore, deserunt
+        dolorum
+        accusantium.</div>
+    </label>
+    <input type="radio" id="physical" name="accordion" />
+    <label class="item" for="physical">
+      <div class="title">Layer 1 - Physical</div>
+      <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aliquid harum velit sed
+        similique exercitationem, quasi in, nulla quos accusamus nemo vel dolores. Est id sint dolore, deserunt
+        dolorum
+        accusantium.</div>
+    </label>
+  </div>
+
+
+
+  <!---->
+
+
+  <div class="footer">
+    <p>c. 2021, Network+ Group Project. Team 3 - Aaron - TJ - Jamen</p>
+  </div>
+
+  <!---->
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
